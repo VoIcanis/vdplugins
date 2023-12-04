@@ -62,6 +62,7 @@ export default () => registerCommand({
             }))
         } catch (e) {
             logger.error(e)
+            ClydeUtils.sendBotMessage(ctx.channel.id, `${e.message}`, getAssetIDByName("Small"))
             return ClydeUtils.sendBotMessage(ctx.channel.id, "Failed to translate message. Please check Debug Logs for more info.", getAssetIDByName("Small"))
         }
     }
