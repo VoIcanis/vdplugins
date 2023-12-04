@@ -1,9 +1,9 @@
 {
-    "name": "Template Plugin",
+    "name": "FR Translate",
     "description": "A plugin for use as a template.",
     "authors": [
         {
-            "name": "You!",
+            "name": "Volcanis",
             "id": "YOUR_ID_HERE"
         }
     ],
