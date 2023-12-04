@@ -20,8 +20,8 @@ const langOptions = Object.entries(lang).map(([key, value]) => ({
 export default () => registerCommand({
     name: "translate",
     displayName: "translate",
-    description: "Send a message using Dislate in any language chosen, using the DeepL Translate API.",
-    displayDescription: "Send a message using Dislate in any language chosen, using the DeepL Translate API.",
+    description: "Send a message in any language chosen, using the DeepL Translate API.",
+    displayDescription: "Send a message in any language chosen, using the DeepL Translate API.",
     applicationId: "-1",
     type: ApplicationCommandType.CHAT as number,
     inputType: ApplicationCommandInputType.BUILT_IN_TEXT as number,
@@ -29,16 +29,16 @@ export default () => registerCommand({
         {
             name: "text",
             displayName: "text",
-            description: "The text/message for Dislate to translate. Please note some formatting of mentions and emojis may break due to the API.",
-            displayDescription: "The text/message for Dislate to translate. Please note some formatting of mentions and emojis may break due to the API.",
+            description: "The text/message to translate. Please note some formatting of mentions and emojis may break due to the API.",
+            displayDescription: "The text/message to translate. Please note some formatting of mentions and emojis may break due to the API.",
             type: ApplicationCommandOptionType.STRING as number,
             required: true
         },
         {
             name: "language",
             displayName: "language",
-            description: "The language that Dislate will translate the text into. This can be any language from the list.",
-            displayDescription: "The language that Dislate will translate the text into. This can be any language from the list.",
+            description: "The language we will translate the text into. This can be any language from the list.",
+            displayDescription: "The language we will translate the text into. This can be any language from the list.",
             type: ApplicationCommandOptionType.STRING as number,
             // @ts-ignore
             choices: [...langOptions],
